@@ -1,5 +1,5 @@
 let deckID;
-const url = 'https://deckofcardsapi.com/api/deck/'
+const url = 'https://deckofcardsapi.com/api/deck/';
 const button = document.querySelector('button');
 window.addEventListener('load', shuffleDeck);
 document.querySelector('button').addEventListener('click', pickSingleCard); 

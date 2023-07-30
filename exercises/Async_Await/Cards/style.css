@@ -1,0 +1,75 @@
+body{
+    background-color: bisque;
+}
+
+.container {
+    background-color: rgb(60, 120, 60);
+    width: 750px;
+    height: 750px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 2px 11px 0px #00000094;
+}
+
+.cards {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+}
+.card {
+    position:absolute;
+}
+
+.card:nth-child(2n){
+    transform: rotate(calc(360deg / 2));
+}
+
+.card:nth-child(3n){
+    transform: rotate(calc(360deg / 3));
+}
+
+.card:nth-child(4n){
+    transform: rotate(calc(360deg / 10));
+}
+
+.card:nth-child(5n){
+    transform: rotate(calc(360deg / 6));
+}
+
+.card:nth-child(6n){
+    transform: rotate(calc(360deg / 14));
+}
+
+.card:nth-child(7n){
+    transform: rotate(calc(360deg / 9));
+}
+
+.card:nth-child(8n){
+    transform: rotate(calc(360deg / 22));
+}
+
+button {
+    padding: 1rem;
+    cursor: pointer;
+    width: 15%;
+    margin-top: 1rem;
+
+}
+
+button:active {
+    box-shadow: inset 0px 1px 8px 1px #0000008a;
+}
+button,
+.container {
+    border-radius: 5px;
+}
+
+.restart {
+    content: "Shuffle cards!";
+}
